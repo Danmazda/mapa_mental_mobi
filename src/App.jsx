@@ -1,18 +1,29 @@
 import './styles/App.css';
-import {Circle} from './componenets/Circle';
+import {StyledCircle, Title} from './componenets/Circle';
 import{Footer} from './componenets/Footer';
+import { Grid } from './componenets/Grid';
 import {motion} from "framer-motion";
 function App() {
   return (
     <div className="App">
-      <motion.div whileHover={{scale:0.8}} animate={{ y: 200}}
+      <motion.div whileHover={{scale:0.8}} 
     >
-      <div className="Menu">
-        <h1>Mobi</h1>
-        <Circle p="Mobi" style={{background: 'blue'}}/>
-        <Circle p="Mobi" style={{background: 'blue'}}/>
+      <div className="Main">
+        <Title>Mob</Title>
       </div>
       </motion.div>
+     <Grid>
+        <StyledCircle p="Mobi" className="circle" backgroundColor="blue"/>
+        <StyledCircle p="Mobi" className="circle" backgroundColor="blue"/>
+        <StyledCircle p="Mobi" className="circle" backgroundColor="blue"/>
+        <StyledCircle p="Mobi" className="circle" backgroundColor="blue"/>
+        <StyledCircle p="Mobi" className="circle" backgroundColor="blue"/>
+        <StyledCircle p="Mobi" className="circle" backgroundColor="blue"/>
+        
+     </Grid>
+     
+   
+      
       <Footer/>
     </div>
   );

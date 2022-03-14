@@ -16,17 +16,9 @@ footer {
     rgba(0, 212, 255, 1) 100%
   );
 }
-.circle {
-  height: 50px;
-  width: 50px;
-  position: absolute;
-  border-radius: 50%;
-  background-color: rgb(4, 39, 39);
-  z-index: 0;
-}
-.Menu {
-  height: 500px;
-  width: 500px;
+.Main {
+  height: 250px;
+  width: 250px;
   border-radius: 50%;
   background-color: aquamarine;
   position: relative;
